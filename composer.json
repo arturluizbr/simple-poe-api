@@ -1,0 +1,19 @@
+{
+    "name": "arturluizbr/simple-poe-api",
+    "description": "A quick library to consume Path of Exile API",
+    "type": "library",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Arturluizbr\\SimplePoeApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Artur Oliveira",
+            "email": "contato@arturluiz.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
