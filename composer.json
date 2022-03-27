@@ -1,19 +1,37 @@
 {
-    "name": "arturluizbr/simple-poe-api",
-    "description": "A quick library to consume Path of Exile API",
-    "type": "library",
-    "license": "mit",
-    "autoload": {
-        "psr-4": {
-            "Arturluizbr\\SimplePoeApi\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Artur Oliveira",
-            "email": "contato@arturluiz.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {}
+  "name": "arturluizbr/simple-poe-api",
+  "description": "A quick library to consume Path of Exile API",
+  "type": "library",
+  "license": "mit",
+  "autoload": {
+    "psr-4": {
+      "Arturluizbr\\SimplePoeApi\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Artur Oliveira",
+      "email": "contato@arturluiz.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.3",
+    "guzzlehttp/guzzle": "^7.0"
+  },
+  "require-dev": {
+    "pestphp/pest": "dev-master"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SimplePoEAPI\\SPAServiceProvider"
+      ]
+    }
+  }
 }
